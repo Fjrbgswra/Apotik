@@ -36,8 +36,7 @@
           Halaman Akses
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php site_url()?>Obat/">Obat</a>
-          <a class="dropdown-item" href="<?php site_url()?>Anak/">Anak</a>
+          <a class="dropdown-item" href="http://localhost/login/index.php/Anak/">Anak</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -58,6 +57,7 @@
         <div class="container">
         
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <h1> Halaman Jabatan </h1><br>
           <h2> Selamat Datang : </h2> <h1> <?php echo $username?></h1>
         </div>
           <br>
