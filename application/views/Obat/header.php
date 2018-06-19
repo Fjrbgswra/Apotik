@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>CRUD UTS</title>
+	<title>Apotik</title>
 	<link rel="stylesheet" type="text/css" href="<?=base_url()?>assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo base_url()?>bootstrap/css/bootstrap.min.css">
     <script src="<?php echo base_url()?>/bootstrap/js/bootstrap.min.js"></script>
@@ -18,7 +18,7 @@
 </head>
 <body>
 	
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Apotik</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -29,22 +29,14 @@
       <li class="nav-item active">
         <a class="nav-link" href="http://localhost/Apotik/Apotik/index.php/Home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Halaman Akses
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php site_url()?>../Obat/list_obat">Obat</a>
-          <a class="dropdown-item" href="<?php site_url()?>Anak/">Anak</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost/Apotik/Apotik/index.php/Home">Tambah Obat <span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
     </form>
     <form class="form-inline mt-2 mt-md-0">
-          <a href="<?php echo base_url('index.php/Login/logout') ?>" class="btn btn-success my-2 my-sm-0 ml-2">Masuk/Login</a>
+          <a href="<?php echo base_url('index.php/Login/logout') ?>" class="btn btn-warning my-2 my-sm-0 ml-2">LOGOUT</a>
     </form>
   </div>
 </nav>

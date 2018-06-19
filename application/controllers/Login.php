@@ -53,7 +53,7 @@
  			}
  			return true;
  		}else{
- 			$this->form_validation->set_message('cekDb',"Login Failed");
+ 			$this->form_validation->set_message('cekDb',"Login Gagal");
  			return false;
  		}
  	}

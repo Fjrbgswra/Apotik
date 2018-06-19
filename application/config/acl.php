@@ -64,8 +64,8 @@ $acl = array(
 		'user' => true,
 		'admin' => true,
 	),
-	'Obat' => array(
-		'user' => true,
+	'Obat3' => array(
+		'user' => false,
 		'admin' => true,
 	),
 	'Anak' => array(
