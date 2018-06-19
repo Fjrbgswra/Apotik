@@ -36,7 +36,7 @@
           Halaman Akses
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php site_url()?>Obat/">Obat</a>
+          <a class="dropdown-item" href="<?php site_url()?>../Obat/list_obat">Obat</a>
           <a class="dropdown-item" href="<?php site_url()?>Anak/">Anak</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -44,8 +44,6 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
     <form class="form-inline mt-2 mt-md-0">
           <a href="<?php echo base_url('index.php/Login/logout') ?>" class="btn btn-warning my-2 my-sm-0 ml-2">LOGOUT</a>
@@ -56,7 +54,7 @@
     <main role="main" class="container">
       <div class="jumbotron">
         <div class="container">
-        
+       
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <h2> Selamat Datang : </h2> <h1> <?php echo $username?></h1>
         </div>
