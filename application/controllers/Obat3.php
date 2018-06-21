@@ -27,50 +27,50 @@ class Obat3 extends CI_Controller {
 	{
 		$this->load->helper('url','form');
 		$this->load->model('obat_model');
-		$data['obat_list'] = $this->obat_model->getDataPegawai();
+		$data['obat_list'] = $this->obat_model->getDataObat();
 		$this->load->view('Obat/list_obat2', $data);
 	}
 
-	// public function create()
-	// {
-	// 	$this->load->helper('url','form');
-	// 	$this->load->library('form_validation');
-	// 	$this->load->model('pegawai_model');
-	// 	$this->form_validation->set_rules('nama', 'Nama', 'trim|required');
-	// 	$this->form_validation->set_rules('alamat', 'ALamat', 'trim|required');
-	// 	$this->form_validation->set_rules('tglLahir', 'Tgl Lahir', 'trim|required');
+	public function create()
+	{
+		$this->load->helper('url','form');
+		$this->load->library('form_validation');
+		$this->load->model('obat_model');
+		$this->form_validation->set_rules('nama', 'Nama', 'trim|required');
+		$this->form_validation->set_rules('keterangan', 'Keterangan', 'trim|required');
+		$this->form_validation->set_rules('tanggal', 'Tanggal', 'trim|required');
 
 		
 
-	// 	if ($this->form_validation->run()==FALSE)
-	// 	{
-	// 		$this->load->view('tambah_pegawai_view');
-	// 	}
-	// 	else
-	// 	{
-	// 		$config['upload_path']		= './assets/uploads';
-	// 		$config['allowed_types']	= 'gif|jpg|png';
-	// 		$config['max_size']			= 1000000000;
-	// 		$config['max_width']		= 10240;
-	// 		$config['max_height']		= 7680;
+		if ($this->form_validation->run()==FALSE)
+		{
+			$this->load->view('Obat/tambah_obat_view');
+		}
+		else
+		{
+			$config['upload_path']		= './assets/img';
+			$config['allowed_types']	= 'gif|jpg|png';
+			$config['max_size']			= 1000000000;
+			$config['max_width']		= 10240;
+			$config['max_height']		= 7680;
 
-	// 		$this->load->library('upload', $config);
+			$this->load->library('upload', $config);
 
-	// 		if ( ! $this->upload->do_upload('foto'))
-	// 		{
-	// 			$error = array('error' => $this->upload->display_errors());
-	// 			$this->load->view('tambah_pegawai_view', $error);
-	// 		}
+			if ( ! $this->upload->do_upload('foto'))
+			{
+				$error = array('error' => $this->upload->display_errors());
+				$this->load->view('Obat/tambah_obat_view', $error);
+			}
 
-	// 		else
-	// 		{
-	// 			$this->pegawai_model->insertPegawai();
-	// 			$this->load->view('tambah_pegawai_data');
+			else
+			{
+				$this->obat_model->insertObat();
+				$this->load->view('Obat/tambah_obat_data');
 
-	// 		}
-	// 	}
+			}
+		}
 
-	// }
+	}
 
 	// public function update($id)
 	// {
@@ -94,12 +94,12 @@ class Obat3 extends CI_Controller {
 	// 	}
 	// }
 
-	// public function deleteData($id)
-	// {
-	// 	$this->load->helper("url");
-	// 	$this->load->model("pegawai_model");
-	// 	$this->pegawai_model->delete($id);
-	// 	redirect('pegawai');
-	// }
+	public function deleteData($id)
+	{
+		$this->load->helper("url");
+		$this->load->model("obat_model");
+		$this->obat_model->delete($id);
+		redirect('data_obat');
+	}
 }
 

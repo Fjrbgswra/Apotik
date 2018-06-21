@@ -36,7 +36,6 @@
           Halaman Akses
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php site_url()?>Obat2">List Obat</a>
           <a class="dropdown-item" href="<?php site_url()?>Obat3">Tambah Obat</a>
           <a class="dropdown-item" href="<?php site_url()?>Anak/">Anak</a>
           <div class="dropdown-divider"></div>

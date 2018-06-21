@@ -7,7 +7,7 @@ class Obat2 extends CI_Controller {
 	{
 		$this->load->helper('url','form');
 		$this->load->model('obat_model');
-		$data['obat_list'] = $this->obat_model->getDataPegawai();
+		$data['obat_list'] = $this->obat_model->getDataObat();
 		$this->load->view('Obat/list_obat', $data);
 	}
 

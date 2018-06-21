@@ -29,17 +29,6 @@
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Halaman Akses
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php site_url()?>../Obat/list_obat">Obat</a>
-          <a class="dropdown-item" href="<?php site_url()?>Anak/">Anak</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
     </form>
@@ -71,13 +60,7 @@
 				<td><?php echo $key['nama'] ?></td>
 				<td><?php echo $key['keterangan'] ?></td>
 				<td><?php echo $key['tanggal'] ?></td>
-				<td><img height="100" width="100" src=<?=base_url("assets/upload")."/".$key['foto']?>></td>
-				<!-- <td>
-					<a href="<?=site_url()?>/Doktor/Update/<?php echo$key['id']?>"><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit"><span class="glyphicon glyphicon-pencil"></span></button></p></a>
-				</td>
-				<td>
-					<a href="<?=site_url()?>/Doktor/Delete/<?php echo$key['id']?>"><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"> <span class="glyphicon glyphicon-trash"></span></button></p></a>
-				</td> -->
+				<td><img height="100" width="100" src=<?=base_url("assets/img")."/".$key['foto']?>></td>
 			</tr>
 		</tbody>
 		<?php } ?>

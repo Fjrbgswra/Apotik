@@ -3,24 +3,24 @@
 
 	class Obat_model extends CI_Model
 	{
-		public function getDataPegawai()
+		public function getDataObat()
 		{
 			$query = $this->db->get("data_obat");
 			return $query->result_array();
 		}
-		// public function insertPegawai()
-		// {
-		// 	$tgl=$this->input->post('tglLahir');
-		// 	$tglBaru=date_format(new DateTime($tgl),"Y-m-d");
-		// 	$object = array(
-		// 		'nama' => $this->input->post('nama'),
-		// 		'alamat' => $this->input->post('alamat'),
-		// 		'tanggalLahir' => $tglBaru,
-		// 		'foto' => $this->upload->data('file_name'));
-		// 	$this->db->insert('pegawai', $object);
-		// }
+		public function insertObat()
+		{
+			$tgl=$this->input->post('tanggal');
+			$tglBaru=date_format(new DateTime($tgl),"Y-m-d");
+			$object = array(
+				'nama' => $this->input->post('nama'),
+				'keterangan' => $this->input->post('keterangan'),
+				'tanggal' => $tglBaru,
+				'foto' => $this->upload->data('file_name'));
+			$this->db->insert('data_obat', $object);
+		}
 
-		public function getPegawai($id)
+		public function getObat($id)
 		{
 			$this->db->where('id', $id);
 			$query = $this->db->get('data_obat');
@@ -38,12 +38,12 @@
 		// 	$this->db->update('pegawai', $data);
 		// }
 
-		// public function delete($id)
-		// { 
-  //       	if ($this->db->delete("pegawai", "id = ".$id)) { 
-  //           return true; 
-  //       }
-  //    } 
+		public function delete($id)
+		{ 
+        	if ($this->db->delete("data_obat", "id = ".$id)) { 
+            return true; 
+        }
+     } 
 	}
 
 ?>

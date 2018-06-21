@@ -29,9 +29,6 @@
       <li class="nav-item active">
         <a class="nav-link" href="http://localhost/Apotik/Apotik/index.php/Home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="http://localhost/Apotik/Apotik/index.php/Home">Tambah Obat <span class="sr-only">(current)</span></a>
-      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
     </form>
