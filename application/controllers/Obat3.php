@@ -72,34 +72,43 @@ class Obat3 extends CI_Controller {
 
 	}
 
-	// public function update($id)
-	// {
-	// 	$this->load->helper('url','form');
-	// 	$this->load->library('form_validation');
-	// 	$this->form_validation->set_rules('nama', 'Nama', 'trim|required');
-	// 	$this->form_validation->set_rules('alamat', 'ALamat', 'trim|required');
-	// 	$this->form_validation->set_rules('tanggalLahir', 'Tgl Lahir', 'trim|required');
+	public function update($id)
+	{
+		$this->load->helper('url','form');
+		$this->load->library('form_validation');
+		$this->load->model('obat_model');
+		$this->form_validation->set_rules('nama', 'Nama', 'trim|required');
+		$this->form_validation->set_rules('keterangan', 'Keterangan', 'trim|required');
+		$this->form_validation->set_rules('tanggal', 'Tanggal', 'trim|required');
 
-	// 	$this->load->model('pegawai_model');
-	// 	$data['pegawai'] = $this->pegawai_model->getPegawai($id);
+		if ($this->form_validation->run()==FALSE)
+		{
+			$data['data_obat'] = $this->obat_model->getObat($id);
+			$this->load->view('Obat/edit_obat_view',$data);
+		}
+		else
+		{
+			$config['upload_path']		= './assets/img';
+			$config['allowed_types']	= 'gif|jpg|png';
+			$config['max_size']			= 10000000000000;
+			$config['max_width']		= 10240;
+			$config['max_height']		= 7680;
 
-	// 	if ($this->form_validation->run()==FALSE)
-	// 	{
-	// 		$this->load->view('edit_pegawai_view',$data);
-	// 	}
-	// 	else
-	// 	{
-	// 		$this->pegawai_model->updateById($id);
-	// 		$this->load->view('edit_pegawai_data');
-	// 	}
-	// }
+			$this->load->library('upload', $config);
+
+			$this->obat_model->updateById($id);
+			$this->load->view('Obat/edit_obat_data');
+		}
+
+
+	}
 
 	public function deleteData($id)
 	{
 		$this->load->helper("url");
 		$this->load->model("obat_model");
 		$this->obat_model->delete($id);
-		redirect('data_obat');
+		redirect('Obat3');
 	}
 }
 

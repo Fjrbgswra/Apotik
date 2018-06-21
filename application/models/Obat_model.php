@@ -27,16 +27,16 @@
 			return $query->result();
 		}
 
-		// public function updateById($id)
-		// {
-		// 	$data = array(
-		// 		'nama' => $this->input->post('nama'),
-		// 		'tanggalLahir' => $this->input->post('tanggalLahir'),
-		// 		'alamat' => $this->input->post('alamat'));
-		// 		//'foto' => $this->upload->data('file_name'));
-		// 	$this->db->where('id', $id);
-		// 	$this->db->update('pegawai', $data);
-		// }
+		public function updateById($id)
+		{
+			$this->db->where('id', $id);
+			$object = array(
+				'nama' => $this->input->post('nama'),
+				'tanggal' => $this->input->post('tanggal'),
+				'keterangan' => $this->input->post('keterangan'),
+				'foto' => $this->upload->data('file_name'));
+			$this->db->update('data_obat', $object);
+		}
 
 		public function delete($id)
 		{ 
