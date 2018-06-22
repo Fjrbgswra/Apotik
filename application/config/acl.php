@@ -68,8 +68,8 @@ $acl = array(
 		'user' => false,
 		'admin' => true,
 	),
-	'Anak' => array(
-		'user' => false,
+	'Belanja' => array(
+		'user' => true,
 		'admin' => true,
 	)
 

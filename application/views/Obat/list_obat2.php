@@ -2,6 +2,7 @@
 <div class="panel panel-default">
 	<!-- Default panel contents -->
 	<a href="<?php echo base_url('index.php/Obat3/create') ?>" class="btn btn-primary my-3">Tambah</a>
+	<a href="<?php echo base_url('index.php/Obat3/create') ?>" class="btn btn-danger my-3">Grid View</a>
 	<h1><div class="panel-heading">Daftar Obat</div></h1>
 
 	<!-- Table -->
