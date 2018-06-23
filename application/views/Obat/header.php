@@ -12,8 +12,10 @@
     <link type="text/css" rel="stylesheet" href="<?php echo base_url()?>assets/jsgrid/jsgrid.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo base_url()?>assets/jsgrid/jsgrid-theme.min.css" />
     <script src="<?php echo base_url()?>assets/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/style.css">
     <script type="text/javascript" src="<?php echo base_url()?>assets/jsgrid/jsgrid.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>assets/custom/grid.js"></script>
+    
 
 </head>
 <body>

@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,6 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/style.css">
 
 
     <!-- Custom styles for this template -->
@@ -37,7 +37,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="<?php site_url()?>Obat3">Tambah Obat</a>
-          <a class="dropdown-item" href="<?php site_url()?>Anak/">Belanja</a>
+          <a class="dropdown-item" href="<?php site_url()?>Belanja">Belanja</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -50,7 +50,6 @@
     </form>
   </div>
 </nav>
-
     <main role="main" class="container">
       <div class="jumbotron">
         <div class="container">
@@ -62,14 +61,15 @@
         </div>
       </div>
     </main>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
   </body>
+  <footer>           
+      <a>Copyright @<span class="glyphicon glyphicon-copyright-mark"></span>Apotik</a>   
+    </footer>
 </html>
 

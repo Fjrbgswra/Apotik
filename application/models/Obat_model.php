@@ -43,7 +43,16 @@
         	if ($this->db->delete("data_obat", "id = ".$id)) { 
             return true; 
         }
-     } 
+     }
+
+     	public function getAllObat2(){
+        $query = $this->db->get('data_obat');
+        if ($query->num_rows()>0) {
+            # code...
+            return $query->result();
+        }
+    }
+
 	}
 
 ?>

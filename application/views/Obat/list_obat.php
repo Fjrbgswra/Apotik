@@ -12,6 +12,7 @@
     <link type="text/css" rel="stylesheet" href="<?php echo base_url()?>assets/jsgrid/jsgrid.min.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo base_url()?>assets/jsgrid/jsgrid-theme.min.css" />
     <script src="<?php echo base_url()?>assets/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/style.css">
     <script type="text/javascript" src="<?php echo base_url()?>assets/jsgrid/jsgrid.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url()?>assets/custom/grid.js"></script>
 
@@ -66,9 +67,9 @@
 		<?php } ?>
 	</table>
 </div>
-<footer class="text-center">
-	<img src="../Apotik/assets/img/2.jpg" width="1100" height="100">
-	<p>Copyright  <span class="glyphicon glyphicon-copyright-mark"></span>Apotik</p>
+<footer>
+	<img src="assets/img/2.jpg" width="1060" height="100">           
+	<a>Copyright @<span class="glyphicon glyphicon-copyright-mark"></span>Apotik</a>   
 </footer>
 </div>
 </body>
