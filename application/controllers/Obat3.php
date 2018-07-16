@@ -88,7 +88,7 @@ class Obat3 extends CI_Controller {
 		}
 		else
 		{
-			$config['upload_path']		= 'assets/img';
+			$config['upload_path']		= './assets/img';
 			$config['allowed_types']	= 'gif|jpg|png';
 			$config['max_size']			= 10000000000000;
 			$config['max_width']		= 10240;

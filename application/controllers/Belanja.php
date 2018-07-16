@@ -115,7 +115,7 @@ class Belanja extends CI_Controller {
 		$nama_barang = $_POST['nama_barang'];
 		$harga = $_POST['harga'];
 		$jumlah = $_POST['jumlah'];
-		$status = $_POST['status'];
+		//$status = $_POST['status'];
 		$kota = $_POST['kota'];
 
 		//menghitung subtotal
@@ -126,13 +126,13 @@ class Belanja extends CI_Controller {
 		//jika statusnya pelanggan akan mendapat diskon 10%.
 		//jika statusnya bukan pelanggan maka tidak mendapat diskon. Jadi:
 
-		switch ($status){
-			case "Pelanggan": 
-			$diskon = $subtotal * 0.1;
-			break; 
-			default: 
-			$diskon = 0; 
-		}
+		// switch ($status){
+		// 	case "Pelanggan": 
+		// 	$diskon = $subtotal * 0.1;
+		// 	break; 
+		// 	default: 
+		// 	$diskon = 0; 
+		// }
 
 		//menghitung ongkos kirim berdasarkan kota tujuan
 		if($kota == "Jakarta" ){
@@ -145,7 +145,7 @@ class Belanja extends CI_Controller {
 			$ongkos = 30000;
 		}
 		//menghitung total keseluruhan
-		$total = $subtotal - $diskon + $ongkos;
+		$total = $subtotal + $ongkos;
 		$this->load->view('Belanja/proses');
 	}
 }

@@ -12,32 +12,33 @@ public function __construct()
     
         public function index()
     {
-       $this->load->view('Obat/Grid');
+       $this->load->view('Obat/grid');
     }
 
     public function getAllObat()
     {
+        // $this->load->model('Obat/grid');
         $result = $this->Obat_model->getAllObat2(); 
         header("Content-Type: application/json");
         echo json_encode($result);
     }
 
-    public function addDoktor()
-    {
-        $this->pegawai_model->save();
-    }
+    // public function addObat()
+    // {
+    //     $this->Obat_model->save();
+    // }
 
-    public function deleteDoktor()
-    {
-        $Id = $this->input->post('id'); 
-        $this->pegawai_model->deleteKendaraan($Id);
-    }
+    // public function deleteObat()
+    // {
+    //     $Id = $this->input->post('id'); 
+    //     $this->Obat_model->deleteKendaraan($Id);
+    // }
 
-    public function updateDoktor()
-    {
-        $Id = $this->input->post('id'); 
-        $this->pegawai_model->updatejs($Id);
-    }
+    // public function updateObat()
+    // {
+    //     $Id = $this->input->post('id'); 
+    //     $this->Obat_model->updatejs($Id);
+    // }
 
     }
 

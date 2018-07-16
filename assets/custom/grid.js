@@ -49,26 +49,20 @@ $(function() {
       },
       fields: [
         {
-          name: "Nama",
+          name: "nama",
           title: "Nama Obat",
           type: "text",
           width: 150
         },
         {
-          name: "Nip",
-          title: "Spesialis",
+          name: "keterangan",
+          title: "Keterangan",
           type: "text",
           width: 50
         },
         {
-          name: "Tanggal",
-          title: "Tanggal Lahir",
-          type: "text",
-          width: 50
-        },
-        {
-          name: "alamat",
-          title: "Alamat",
+          name: "tanggal",
+          title: "Tanggal Obat",
           type: "text",
           width: 50
         },

@@ -10,7 +10,7 @@
 </style>
 </head>
 <body>
-
+<!-- 
 <?php 
 $nama_barang = $_POST['nama_barang'];
 $harga = $_POST['harga'];
@@ -47,7 +47,7 @@ else if($kota == "Surabaya" ){
 //menghitung total keseluruhan
 $total = $subtotal - $diskon + $ongkos;
 ?>
-
+ -->
 <div align="center">
 <table width="297" border="1">
 <tr>
@@ -78,16 +78,6 @@ $total = $subtotal - $diskon + $ongkos;
 <?php echo "Rp. ".number_format($subtotal); ?></td>
 </tr>
 <tr>
-<td bgcolor="#CCCCCC">Status</td>
-<td bgcolor="#CCCCCC">&nbsp;
-<?php echo "$status"; ?></td>
-</tr>
-<tr>
-<td bgcolor="#CCCCCC">Diskon</td>
-<td bgcolor="#CCCCCC">&nbsp;
-<?php echo "Rp. ".number_format($diskon); ?></td>
-</tr>
-<tr>
 <td bgcolor="#CCCCCC">Ongkos Kirim</td>
 <td bgcolor="#CCCCCC">&nbsp;
 <?php echo "Rp. ".number_format($ongkos)?> 
@@ -100,7 +90,7 @@ $total = $subtotal - $diskon + $ongkos;
 <?php echo "Rp. ".number_format($total); ?></td>
 </tr>
 </table>
-<a href="index.php"> &lt;&lt; Kembali</a><br />
+<a href="http://localhost/Apotik/Apotik/index.php/Home"> &lt;&lt; Kembali</a><br />
 </div>
 </body>
 </html>

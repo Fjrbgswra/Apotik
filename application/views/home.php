@@ -35,12 +35,11 @@
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Halaman Akses
         </a>
-        <a class="nav-link" href="http://localhost/Apotik/index.php/User">User <span class="sr-only">(current)</span></a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="<?php site_url()?>Obat3">Tambah Obat</a>
           <a class="dropdown-item" href="<?php site_url()?>Belanja">Belanja</a>
+          <a class="dropdown-item" href="<?php site_url()?>User">User</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
     </ul>
